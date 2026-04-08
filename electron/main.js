@@ -79,7 +79,8 @@ ipcMain.handle("convert-mp4-to-wav", async (_event, payload) => {
 
     sendProgress(win, { stage: "starting", line: "OPENING CONTAINER", percent: 2 });
 
-    const ffmpeg = spawn("ffmpeg", ffmpegArgs);
+   const ffmpegPath = "C:\\Users\\richa\\Downloads\\Wwise-Unpacker-1.0.3\\Wwise-Unpacker-1.0.3\\Tools\\ffmpeg.exe";
+
 
     let stderr = "";
     let durationSeconds = null;
