@@ -1,0 +1,13 @@
+{
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "electron": "electron .",
+    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "electron": "^31.0.2",
+    "wait-on": "^7.2.0"
+  }
+}
