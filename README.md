@@ -1,61 +1,57 @@
-A streamlined desktop application built with Electron and Node.js for efficient audio file conversion. This tool provides a simple interface to process audio files through custom scripts.
+# 🎵 Custom Audio Converter
 
-🚀 Features
-User-Friendly Interface: Built with Electron for a native desktop experience.
+A desktop application for batch audio conversion, built with Electron, Node.js, and Python. Drag in your files, get clean audio out.
 
-Batch Processing: Convert multiple files through the integrated script engine.
+Built as a practical tool for my local AI projects — specifically to prep audio files for voice synthesis pipelines.
 
-Modular Architecture: Easily extendable conversion logic via the scripts/ directory.
+## Features
 
-🛠️ Prerequisites
-Before you begin, ensure you have the following installed:
+- Native desktop UI via Electron
+- Batch file processing through a modular script engine
+- JavaScript frontend + Python conversion backend
+- Extensible — add new conversion formats by dropping scripts into `scripts/`
 
-Node.js (LTS version recommended)
+## Stack
 
-npm
+| Layer | Tech |
+|---|---|
+| Desktop shell | Electron |
+| Frontend | JavaScript / HTML / CSS |
+| Conversion backend | Python |
+| Build tooling | Vite / npm |
 
-📥 Installation
-Clone the repository:
+## Getting Started
 
-Bash
+```bash
+# Clone the repo
 git clone https://github.com/TheUnsungGamer/custom-audio-converter.git
 cd custom-audio-converter
-Install dependencies:
 
-Bash
+# Install dependencies
 npm install
-💻 Usage
-Development
-To run the application in development mode with hot-reloading:
 
-Bash
+# Run in development mode
 npm start
-Building
-To package the application for your current operating system:
 
-Bash
+# Build for your OS
 npm run build
-📂 Project Structure
-electron/: Main process configuration and window management.
+```
 
-src/: Frontend source code (React/Vue/Plain JS).
+## Project Structure
 
-scripts/: Backend conversion logic and utility scripts.
+```
+custom-audio-converter/
+├── electron/       # Main process — window management, app lifecycle
+├── src/            # Frontend UI
+├── scripts/        # Conversion logic (Python + JS utilities)
+├── public/         # Static assets
+└── package.json
+```
 
-public/: Static assets and icons.
+## Why I Built This
 
-🤝 Contributing
-Contributions are welcome!
+I needed a reliable way to batch-convert MP4 files to WAV for use in my [Project Ash Stack](https://github.com/TheUnsungGamer/Project-Ash-Stack) TTS pipeline. Existing tools were either too heavy or too limited, so I built my own.
 
-Fork the Project
+---
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+Part of the [Project Ash](https://github.com/TheUnsungGamer/Project-Ash-Stack) ecosystem.
